@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EliteMotors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300&display=swap');
+      body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins","sans-serif";
+      }
+      .container-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #839073;
+      }
+      .nav-img img{
+        display: flex;
+        height: 2.8rem;
+        padding-left: 2rem;
+      }
+      .nav-list{
+        display: inline-flex;
+        gap: 2rem;
+        padding-right: 3rem;
+        list-style: none;
+      }
+      .nav-item a{
+        text-decoration: none;
+        color: #2e4d33f6;
+        font-size: 1rem;
+      }
+      .nav-item a:hover{
+        color: #c8cac4e9;
+        font-size: 1.03rem;
+      }
+      .main-container{
+        background-image: linear-gradient(100deg, #000000, #00000020), url(img-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 35rem;
+      }
+      .main-content{
+        margin: 0 7rem;
+        padding-top: 7rem;
+      }
+      .main-content h1{
+        margin: 0;
+        color: #c8cac4e9;
+        font-size: 1.8rem;
+      }
+      .main-button{
+        height: 2.5rem;
+        width: 8rem;
+        background-color: #839073;
+        color: #18210f;
+        border-radius: 30px;
+        border-style: none;
+        font-size: .92rem;
+        text-transform: 450px;
+        margin-top: 1.5rem;
+      }
+      .main-button:hover{
+        color: #c8cac4e9;
+        background-color: #68735b;
+        transition: 0.25s ease;
+        transform: scale(1.05);
+      }
+      .importation-container{
+        margin-top: 3rem;
+      }
+      .importation-container h2{
+        text-align: center;
+        color: #18210f;
+        margin-bottom: 2rem;
+      }
+      .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+      }
+      .card{
+        background-color: #83907350;
+        border-radius: 7px;
+        width: 25%;
+        text-align: center;
+        padding: 2rem 0;
+        color: #18210fae;
+      }
+      .card:hover{
+        transition: 0.1s ease;
+        transform: scale(1.02);
+      }
+      .card h3{
+        color: #18210f;
+        text-transform: uppercase;
+      }
+      .cards  img{
+        border-radius: 5px;
+      }
+      .card-button{
+        background-color: #46503c;
+        color: #c8cac4e9;
+        border-radius: 4px;
+        border-style: none;
+        height: 2rem;
+        width: 5.5rem;
+        font-size: .88rem;
+        font-weight: 450;
+      }
+      .card-button:hover{
+        border-style: solid;
+        border-color: #46503c;
+        background-color: #46503c00;
+        color: #000000;
+        transition: 0.1s ease;
+      }
+      .about-us-container{
+        background-color: #839073;
+        margin-top: 4rem;
+      }
+      .about-us-container h2{
+        margin-left: 4rem;
+        padding-top: 5rem;
+        color: #18210f;
+      }
+      .about-us-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin: 0 4rem;
+        padding-bottom: 4rem;
+        color: #18210f;
+        line-height: 2rem;
+        font-size: 1rem;
+      }
+      .about-us-content img{
+        border-radius: 4px;
+      }
+      .about-us-content span{
+        color: #c8cac4e9;
+        font-size: 1.05rem;
+      }
+      .brands-container{
+        margin-top: 3.5rem;
+      }
+      .brands{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+      }
+      .brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+      }
+      .social-media-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 3rem 0 0 0;
+      }
+      .social-media{
+        font-size: 1.5rem;
+      }
+      .social-media a{
+        text-decoration: none;
+        color: #839073;
+      }
+      .frase{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+      }
+      .copyright{
+        text-align: center;
+        font-size: .8rem;
+        padding-bottom: 1rem;
+      }
+      @media (max-width:980px){
+        .about-us-content{
+          flex-direction: column;
+        }
+        .about-us-content img{
+          width: 45%;
+          margin-bottom: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a name="nav"></a>
+    <header class="container-nav">
+      <div class="nav-img">
+        <img src="EliteMotors_Logo.png" alt="Logo">
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#nav">Inicio</a></li>
+          <li class="nav-item"><a href="#importaciones">Importaciones</a></li>
+          <li class="nav-item"><a href="#about-us">Sobre Nosotros</a></li>
+          <li class="nav-item"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="main-container">
+          <div class="main-content">
+            <h1>Tu coche soñado <br> más cerca de lo que imaginas</h1>
+            <button class="main-button">Buscar Coche</button>
+          </div>
+        </div>
+      </section>
+      <section class="importation-section">
+        <div class="importation-container">
+          <a name="importaciones"></a>
+          <h2>Países con los que trabajamos</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>Alemania</h3>
+              <img src="img-2.jpeg" alt="" width="80%">
+              <p>Calidad e ingeniería alemana a tu alcance.</p>
+              <button class="card-button">Ver más</button>
+            </div>
+            <div class="card">
+              <h3>Bélgica</h3>
+              <img src="img-3.jpeg" alt="" width="76.5%">
+              <p>Lo mejor del mercado belga, directo a ti.</p>
+              <button class="card-button">Ver más</button>
+            </div>
+            <div class="card">
+              <h3>Luxemburgo</h3>
+              <img src="img-4.jpeg" alt="" width="72%">
+              <p>Exclusividad europea desde Luxemburgo.</p>
+              <button class="card-button">Ver más</button>
+            </div>
+          </div>
+          <div class="brands-container">
+            <h2>Nuestras marcas</h2>
+          <div class="brands">
+            <div class="brand"><img src="img-6.jpeg" alt="" width="15%"></div>
+            <div class="brand"><img src="img-7.jpeg" alt="" width="25%"></div>
+            <div class="brand"><img src="img-8.jpeg" alt="" width="25%"></div>
+            <div class="brand"><img src="img-9.jpeg" alt="" width="12%"></div>
+            <div class="brand"><img src="img-10.jpeg" alt="" width="30%"></div>
+            <div class="brand"><img src="img-11.jpeg" alt="" width="30%"></div>
+            <div class="brand"><img src="img-12.jpeg" alt="" width="12%"></div>
+            <div class="brand"><img src="img-13.jpeg" alt="" width="14%"></div>
+            <div class="brand"><img src="img-14.jpeg" alt="" width="22%"></div>
+            <div class="brand"><img src="img-15.jpeg" alt="" width="30%"></div>
+          </div>
+        </div>
+          </div>
+      </section>
+      <section class="about-us-section">
+        <div class="about-us-container">
+          <a name="about-us"></a>
+          <h2>Nuestra Historia</h2>
+          <div class="about-us-content">
+            <p>Somos un grupo de jóvenes emprendedores apasionados por el mundo del motor y la exclusividad. Nuestra idea nació del sueño de acercar vehículos de alta gama a personas como tú, que valoran la calidad, la elegancia y la experiencia única que solo un coche especial puede ofrecer. <br>Con dedicación y entusiasmo, hemos construido una red de confianza con los mejores proveedores europeos, para traerte lo mejor de Alemania, Bélgica y Luxemburgo. No solo importamos coches, sino que también compartimos nuestra pasión, cuidando cada detalle para que el proceso sea tan emocionante como el vehículo que elijas. <br> <span>En EliteMotors no solo vendemos cohes, creamos experiencias.</span></p>
+            <img src="img-5.jpeg" alt="" width="35%">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a name="contacto"></a>
+      <div class="social-media-items">
+        <div class="social-media"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="social-media"><a href=""><i class="fa-brands fa-tiktok"></i></a></div>
+        <div class="social-media"><a href=""><i class="fa-regular fa-envelope"></i></a></div>
+        <div class="social-media"><a href=""><i class="fa-brands fa-github"></i></a></div>
+        <div class="social-media"><a href=""><i class="fa-brands fa-linkedin"></i></a></div>
+      </div>
+      <div class="frase"><p>"Live your dreams with Elite Motors"</p></div>
+      <div class="copyright"><span><i class="fa-regular fa-copyright"></i>Copyright 2024 EliteMotors</span></div>
+    </footer>
+  </body>
+</html>
